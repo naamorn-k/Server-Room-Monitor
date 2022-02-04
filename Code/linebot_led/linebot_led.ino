@@ -2,15 +2,15 @@
 #include <ESP8266HTTPClient.h>
 #include <MicroGear.h>
 #include <ArduinoJson.h>
-const char* ssid     = "ชื่อ WiFi";  
-const char* password = "รหัสผ่าน WiFi"; 
 
-const char* host = "---- INPUT ----"; // ตัวอย่างเช่น http://ชื่อappของคุณ.herokuapp.com/bot.php
-#define APPID   "---- INPUT ----" // ชื่อ APP ID ใน NETPIE
-#define KEY     "---- INPUT ----" // key ของ Device Key
-#define SECRET  "---- INPUT ----" // Secret ของ Device Key
+const char* ssid     = "Precision-Sales";  
+const char* password = "Presales@2017"; 
+const char* host = "https://serv-monitor.herokuapp.com/"; // ตัวอย่างเช่น http://ชื่อappของคุณ.herokuapp.com/bot.php
 
-#define ALIAS   "esp8266"  // ตั้งให้ตรงกับชื่อ อุปกรณ์ของ Device Key ใน NETPIE
+#define APPID   "0dad92a4-409a-44c0-b6cd-878d8948dc2f" // ชื่อ APP ID ใน NETPIE
+#define KEY     "agLHVb4E52uDEZnSrzQuChcev8edMVVu" // key ของ Device Key
+#define SECRET  "TL9~D28iZ3iBx4L45N45KfflM6(GdM~k" // Secret ของ Device Key
+#define ALIAS   "ServerRoomMonitor"  // ตั้งให้ตรงกับชื่อ อุปกรณ์ของ Device Key ใน NETPIE
 #define TargetWeb "switch"  
 
 WiFiClient client;
