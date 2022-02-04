@@ -1,10 +1,10 @@
  <?php
  function pubMqtt($topic,$msg){
-       $APPID= "FixitCenter/"; //enter your appid
-     $KEY = "0ZcxhUOlSSrdtMt"; //enter your key
-    $SECRET = "JS9MqcQ2QyuujStrl7Y7Nqim2"; //enter your secret
+    $APPID= "0dad92a4-409a-44c0-b6cd-878d8948dc2f"; //enter your appid
+    $KEY = "agLHVb4E52uDEZnSrzQuChcev8edMVVu"; //enter your key
+    $SECRET = "TL9~D28iZ3iBx4L45N45KfflM6(GdM~k"; //enter your secret
     $Topic = "$topic"; 
-      put("https://api.netpie.io/microgear/".$APPID.$Topic."?retain&auth=".$KEY.":".$SECRET,$msg);
+      put("https://serv-monitor.herokuapp.com/".$APPID.$Topic."?retain&auth=".$KEY.":".$SECRET,$msg);
  
   }
  function getMqttfromlineMsg($Topic,$lineMsg){
