@@ -4,7 +4,7 @@
     $KEY = "agLHVb4E52uDEZnSrzQuChcev8edMVVu"; //enter your key
     $SECRET = "TL9~D28iZ3iBx4L45N45KfflM6(GdM~k"; //enter your secret
     $Topic = "$topic"; 
-      put("https://serv-monitor.herokuapp.com/".$APPID.$Topic."?retain&auth=".$KEY.":".$SECRET,$msg);
+      put("http://serv-monitor.herokuapp.com/".$APPID.$Topic."?retain&auth=".$KEY.":".$SECRET,$msg);
  
   }
  function getMqttfromlineMsg($Topic,$lineMsg){
